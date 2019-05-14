@@ -26,11 +26,11 @@ void calculateDistanceOfFaling (int HeigtOfTheTower)
   {
       double resultMetersLeftToTheGround {};
       resultMetersLeftToTheGround = HeigtOfTheTower - (myConstants::gravity * seconds * seconds / 2);
-      if (resultMetersLeftToTheGround < 0)
-      {
-	  std::cout << "At "<< seconds <<", the ball is on the ground" << std::endl;
-	  break;
-      }
+		if (resultMetersLeftToTheGround < 0) {
+			std::cout << "At " << seconds << "second, the ball is on the ground"
+					<< std::endl;
+			break;
+		}
       std::cout << "At " << seconds << " seconds, the ball is at height: "
 	  << resultMetersLeftToTheGround << " meters"
 	  << std::endl;
